@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Language Prediction</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='./css/style.css') }}">
+</head>
+<body >
+	<div class="overlay">
+		<form action="/predict" id="upload-form" method="POST" enctype="multipart/form-data">
+		   <div class="con">
+		   <header class="head-form">
+			  <h2>Language Prediction</h2><br><br>
+			  <p>Enter First Name and Sur Name</p>
+		   </header>
+		   <br>
+		   <div class="field-set">
+			   <span class="form-label">First Name &nbsp</span>
+			   <input class="form-input" id="txt-input" type="text" placeholder="@First Name" id="Fname" name="fname" required>
+			  <br>
+			  <span class="form-label">Sur Name &nbsp &nbsp</span>	 
+			  <input class="form-input" type="text" placeholder="@Sur Name" id="Sname"  name="sname" required>		 
+			  <br>
+			  <br>
+			  <br>
+			  <br>
+		   </div>
+
+		   <div class="other">
+			  <button class="btn submits predict">Predict
+			  <i class="fa fa-user-plus" aria-hidden="true"></i>
+			  </button>
+		   </div>
+		  </div>
+		</form>
+		</div>
+</body>
+</html>
